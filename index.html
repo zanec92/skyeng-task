@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <div class="tariff">
+    <div class="tariff__row">
+      <div class="tariff__item tariff__item--first-child" data-tariff_id="0">
+        <img class="tariff__logo" src="./img/device.svg" alt="Mobile" title="Mobile">
+        <h3 class="tariff__name">Mobile</h3>
+        <p class="tariff__description">Get notifications about new releases in our mobile app.</p>
+        <p class="tariff__price"><span class="tariff__price_sup">$</span>10<span class="tariff__price_sub">/ month</span></p>
+      </div>
+      <div class="tariff__item" data-tariff_id="1">
+        <img class="tariff__logo" src="./img/laptop.svg" alt="Desktop" title="Desktop">
+        <h3 class="tariff__name">Desktop</h3>
+        <p class="tariff__description">Enjoy new episodes on your laptop in browser with our web service, which suppopts all the platforms.</p>
+        <p class="tariff__price"><span class="tariff__price_sup">$</span>15<span class="tariff__price_sub">/ month</span></p>
+      </div>
+      <div class="tariff__item tariff__item--last-child" data-tariff_id="2">
+        <img class="tariff__logo" src="./img/monitor.svg" alt="TV" title="TV">
+        <h3 class="tariff__name">TV</h3>
+        <p class="tariff__description">Watch your favorite series at home on large screen with our TV application.</p>
+        <p class="tariff__price"><span class="tariff__price_sup">$</span>20<span class="tariff__price_sub">/ month</span></p>
+      </div>
+    </div>
+    <div class="tariff__row">
+      <a class="tariff__button">Give feedback</a>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h3 class="modal__title">Confirmation</h3>
+          <img class="modal__close" src="./img/cross.svg" alt="close" title="close">
+        </div>
+        <div class="modal__body">
+          <div class="modal__tariff">
+            <img class="modal__tariff-logo">
+            <h3 class="modal__tariff-name"></h3>
+            <p class="modal__tariff-description"></p>
+            <p class="modal__tariff-price"><span class="tariff__price_sup">$</span><span id="tariff-price"></span><span class="tariff__price_sub">/ month</span></p>
+            <div class="modal__row">
+              <a class="modal__button">Confirm and pay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  
+</body>
+</html>
